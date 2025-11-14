@@ -38,8 +38,7 @@
     </div>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-    <script src="assets/js/garden.js?v=2"></script>
+    <script src="{{ '/assets/js/garden.js' | relative_url }}?v=2"></script> 
     <script>
         var papers = [
         {"id": "isoscore", "title": "IsoScore", "venue": "ACL2022", "url": "https://arxiv.org/pdf/2108.07344", "root_node": 1, "root_name": "Representational Geometry\n2021-Present", "root_color": "#FA9189", "coauthors": ["Nate Gillman, Taylor Rayne, Carsten Eickhoff"], "full_title": "IsoScore: Measuring the Uniformity of Embedding Space Utilization", "summary": "My first conference paper! We develop IsoScore, the first metric capable of accurately measure isotropy, i.e., the uniformity of variance in embedding space. We show that existing methods for measuing isotorpy as fundamentally flawed and only IsoScore reliably measures isotropy."},     
@@ -56,6 +55,6 @@
 
         build_garden(papers);
     </script>
-
+    
 </body>
 </html>
