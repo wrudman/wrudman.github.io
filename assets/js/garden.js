@@ -300,8 +300,6 @@
 
 // turn the flat representation into a tree
 
-var flowerTemplateHTML = $('#flower_template').html();
-
 var garden_height = 580;
 var plantWidth = 400;
 var root_stem_height = 70;
@@ -314,6 +312,7 @@ var research_garden = [];
 var id2paper = {};
 
 function build_garden(papers) {
+    var flowerTemplateHTML = $('#flower_template').html();
     research_garden = [];
     id2paper = {};
     for(var paper of papers) {
