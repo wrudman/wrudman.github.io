@@ -376,13 +376,12 @@ function createPlant(plant, x_pos, plant_index) {
 }
 
 function get_whiter_color(color, factor) {
-    // the color is in the format #RRGGBB
     var r = parseInt(color.slice(1, 3), 16);
     var g = parseInt(color.slice(3, 5), 16);
     var b = parseInt(color.slice(5, 7), 16);
-    r = Math.min(255, r + factor);
-    g = Math.min(255, g + factor);
-    b = Math.min(255, b + factor);
+    r = Math.max(0, Math.min(255, r + factor));
+    g = Math.max(0, Math.min(255, g + factor));
+    b = Math.max(0, Math.min(255, b + factor));
     return `#${r.toString(16).padStart(2, '0')}${g.toString(16).padStart(2, '0')}${b.toString(16).padStart(2, '0')}`;
 }
 
