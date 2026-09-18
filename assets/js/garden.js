@@ -305,7 +305,7 @@ var flowerTemplateHTML = $('#flower_template').html();
 var garden_height = 580;
 var plantWidth = 400;
 var root_stem_height = 70;
-var root_offset = 60;
+var root_offset = 90;
 var stem_height = 80;
 
 const waveWidth = 150, wave_offset = 80, waveHeight = 50;
