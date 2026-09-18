@@ -331,7 +331,7 @@ function build_garden(papers) {
         }
     }
 
-    var garden_width = plantWidth*research_garden.length+100;
+    var garden_width = plantWidth*research_garden.length+125;
     $('#garden').width(garden_width).height(garden_height);
     $('#garden_container'); // .width(garden_width).height
     
