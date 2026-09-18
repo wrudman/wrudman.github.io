@@ -303,7 +303,7 @@
 var flowerTemplateHTML = $('#flower_template').html();
 
 var garden_height = 580;
-var plantWidth = 520;
+var plantWidth = 500;
 var root_stem_height = 70;
 var root_offset = 90;
 var stem_height = 80;
